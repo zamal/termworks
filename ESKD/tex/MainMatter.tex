@@ -1,0 +1,63 @@
+\section{Оформление}
+\subsection{Перечисления}
+
+
+Нумерованное перечисление:
+\begin{enumerate}
+\item первый элемент;
+\item второй элемент состоит из:
+\begin{enumerate}
+\item первого подэлемента;
+\item второго подэлемента;
+\end{enumerate}
+\item третий элемент.
+\end{enumerate}
+
+\subsection{Таблицы}
+
+Название таблицы следует помещать над таблицей. Проверка
+таблицы~\ref{t:1}.
+
+\begin{table}[b]
+\caption{Заголовок таблицы}
+\label{t:1}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\multicolumn{1}{|p{4cm}|}{Диаметр стержня крепежной детали, мм}&
+\multicolumn{1}{p{4cm}|}{Масса $1000~\text{шт.}$ стальных шайб, кг}&
+\multicolumn{1}{p{4cm}|}{Диаметр стержня крепежной детали, мм}&
+\multicolumn{1}{p{4cm}|}{Масса $1000~\text{шт.}$ стальных шайб,
+кг}\\\hline
+$1{,}1$ & $0{,}045$ & $2{,}0$ & $0{,}192$\\\hline
+$1{,}2$ & $0{,}043$ & $2{,}5$ & $0{,}350$\\\hline
+$1{,}4$ & $0{,}111$ & $3{,}0$ & $0{,}553$\\\hline
+\end{tabular}
+\end{table}
+
+\subsection{Иллюстрации}
+
+Пример иллюстрации изображен на рисунке~\ref{pidgin}.
+
+\begin{figure}[ht]
+  \center
+  \includegraphics{pidgin}
+  \caption{Pidgin}\label{pidgin}
+\end{figure}
+
+\subsection{Математика}
+
+Плотность каждого образца $\rho, \text{кг}/\text{м}^3$, вычисляют
+по формуле
+\begin{equation}
+\label{eq:1}
+\rho = \frac{m}{V},
+\end{equation}
+\begin{ESKDexplanation}
+\item[где ] $m$ "--- масса образца, кг;
+\item $V$ "--- объем образца, $\text{м}^3$.
+\end{ESKDexplanation}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../TermWork"
+%%% End:

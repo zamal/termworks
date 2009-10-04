@@ -1,0 +1,122 @@
+\begin{lstlisting}[caption = {stylesheet.css}, label = {stylesheet.css}, language = PHP]
+<body onload="hideNoDHTML();">
+  <script type="text/javascript">
+  <!--
+    function hideNoDHTML()
+    {
+      document.getElementById('nodhtml').style.display = 'none';
+      showQuestions();
+    }
+
+    function showQuestions()
+    {
+      document.getElementById('questions').style.display = 'block';
+      document.getElementById('results').style.display = 'none';
+    }
+
+    function showResults()
+    {
+      var i = 0;
+
+      if(document.getElementById('choice12').checked == true)
+      {
+        i++;
+      }
+
+      if(document.getElementById('choice23').checked == true)
+      {
+        i++;
+      }
+
+      if ((document.getElementById('choice31').checked == true) && (document.getElementById('choice32').checked == false) && (document.getElementById('choice33').checked == true) && (document.getElementById('choice34').checked == false))
+      {
+        i++;
+      }
+
+      if((document.getElementById('choice41').checked == false) && (document.getElementById('choice42').checked == true) && (document.getElementById('choice43').checked == true) && (document.getElementById('choice44').checked == false))
+      {
+        i++;
+      }
+
+      if(document.getElementById('text5').value == 'ГОСТ Р 34.10-2001')
+      {
+        i++;
+      }
+
+      document.getElementById('questions').style.display = 'none';
+      document.getElementById('results').style.display = 'block';
+
+      document.getElementById('results').innerHTML = '<h2>Результаты теста</h2>\n<p>Количество правильных ответов: <strong>' + i + '</strong>.</p>';
+
+      if(i == 5)
+      {
+        document.getElementById('results').innerHTML += '<p style="color: #096">Поздравляем с отличным результатом!</p>';
+      }
+
+      if(i <= 2)
+      {
+        document.getElementById('results').innerHTML += '<p style="color: #c00">К сожалению, результат очень плохой.</p>';
+      }
+
+      document.getElementById('results').innerHTML += '<p class="buttons"><input type="button" value="Вернуться к вопросам" onclick="showQuestions();" /></p>';
+    }
+
+    function getHelp()
+    {
+      document.getElementById('choice12').checked = true;
+
+      document.getElementById('choice23').checked = true;
+
+      document.getElementById('choice31').checked = true;
+      document.getElementById('choice32').checked = false;
+      document.getElementById('choice33').checked = true;
+      document.getElementById('choice34').checked = false;
+
+      document.getElementById('choice41').checked = false;
+      document.getElementById('choice42').checked = true;
+      document.getElementById('choice43').checked = true;
+      document.getElementById('choice44').checked = false;
+
+      document.getElementById('text5').value = 'ГОСТ Р 34.10-2001';
+    }
+  //-->
+  </script>
+
+  <h1>Интерактивный тест на знание ЭЦП</h1>
+
+  <div id="questions">
+    <form action="">
+      <h2>1. Каково, на ваш взгляд, основное предназначение ЭЦП?</h2>
+      <p><input type="radio" name="question1" id="choice11" /> <label for="choice11">Визуальное оформление веб-страниц</label></p>
+      <p><input type="radio" name="question1" id="choice12" /> <label for="choice12">Защита электронного документа от подделки</label></p>
+      <p><input type="radio" name="question1" id="choice13" /> <label for="choice13">Регистрация пользователей</label></p>
+      <p><input type="radio" name="question1" id="choice14" /> <label for="choice14">Создание зашифрованных разделов жёсткого диска</label></p>
+
+      <h2>2. Стандарт электронной цифровой подписи:</h2>
+      <p><input type="radio" name="question2" id="choice21" /> <label for="choice21">POP3</label></p>
+      <p><input type="radio" name="question2" id="choice22" /> <label for="choice22">UTF</label></p>
+      <p><input type="radio" name="question2" id="choice23" /> <label for="choice23">ElGamal</label></p>
+      <p><input type="radio" name="question2" id="choice24" /> <label for="choice24">PHP</label></p>
+
+      <h2>3. RSA - это</h2>
+      <p><input type="checkbox" id="choice31" /> <label for="choice31">Алгоритм, пригодный для шифрования</label></p>
+      <p><input type="checkbox" id="choice32" /> <label for="choice32">Операционная система</label></p>
+      <p><input type="checkbox" id="choice33" /> <label for="choice33">Криптографический алгоритм с открытым ключом</label></p>
+      <p><input type="checkbox" id="choice34" /> <label for="choice34">Открытый ключ</label></p>
+
+      <h2>4. Назовите возможные угрозы ЭЦП?</h2>
+      <p><input type="checkbox" id="choice41" /> <label for="choice31"></label>Злоумышленник узнает алгоритм шифрования</p>
+      <p><input type="checkbox" id="choice42" /> <label for="choice32">Злоумышленник может попытаться подобрать документ к данной подписи, чтобы подпись к нему подходила</label></p>
+      <p><input type="checkbox" id="choice43" /> <label for="choice33">Злоумышленник может попытаться подделать подпись для выбранного им документа</label></p>
+      <p><input type="checkbox" id="choice44" /> <label for="choice34">Злоумышленник узнает о существовании ЭЦП</label></p>
+
+      <h2>5. Российский стандарт электронной цифровой подписи:</h2>
+      <p><input type="text" size="20" maxlength="20" id="text5" /></p>
+
+      <p class="buttons"><input type="button" value="Показать результаты" onclick="showResults();" /> <input type="button" value="Подсказать ответы" onclick="getHelp();" /> <input type="reset" value="Очистить форму" /></p>
+    </form>
+  </div>
+
+  <div id="results"></div>
+</body>
+\end{lstlisting}

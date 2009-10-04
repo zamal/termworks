@@ -1,0 +1,1394 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by diasvg.py -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="635"
+   height="640"
+   viewBox="15.975 -10.025 50.025 20.025"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="spectr.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0">
+  <metadata
+     id="metadata277">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs275">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 532.3819 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1206.4961 : 532.3819 : 1"
+       inkscape:persp3d-origin="603.24805 : 354.92126 : 1"
+       id="perspective279" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-height="978"
+     inkscape:window-width="1280"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     inkscape:zoom="1.2109375"
+     inkscape:cx="322.44856"
+     inkscape:cy="315.61201"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:current-layer="svg2">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2645"
+       visible="true"
+       enabled="true" />
+  </sodipodi:namedview>
+  <line
+     x1="39.559395"
+     y1="-21.423304"
+     x2="42.50238"
+     y2="-21.423304"
+     id="line4"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="42.50238"
+     y1="-21.423304"
+     x2="42.50238"
+     y2="-18.146624"
+     id="line6"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="39.559395"
+     y1="-21.423304"
+     x2="39.559395"
+     y2="-18.146624"
+     id="line8"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="42.50238"
+     y1="-18.146624"
+     x2="43.973873"
+     y2="-19.784964"
+     id="line10"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="43.973873"
+     y1="-19.784964"
+     x2="45.445366"
+     y2="-18.146624"
+     id="line12"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="45.445366"
+     y1="-18.146624"
+     x2="46.916859"
+     y2="-19.784964"
+     id="line14"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="46.916859"
+     y1="-19.784964"
+     x2="46.916859"
+     y2="-18.146624"
+     id="line16"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="39.559395"
+     y1="-18.146624"
+     x2="38.087902"
+     y2="-19.784964"
+     id="line18"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="38.087902"
+     y1="-19.784964"
+     x2="36.616413"
+     y2="-18.146624"
+     id="line20"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="36.616413"
+     y1="-18.146624"
+     x2="35.14492"
+     y2="-19.784964"
+     id="line22"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="35.14492"
+     y1="-19.784964"
+     x2="35.14492"
+     y2="-18.146624"
+     id="line24"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="30.73044"
+     y1="-13.231606"
+     x2="33.673428"
+     y2="-13.231606"
+     id="line26"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="33.673428"
+     y1="-13.231606"
+     x2="33.673428"
+     y2="-9.9549274"
+     id="line28"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="30.73044"
+     y1="-13.231606"
+     x2="30.73044"
+     y2="-9.9549274"
+     id="line30"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="33.673428"
+     y1="-9.9549274"
+     x2="35.14492"
+     y2="-11.593266"
+     id="line32"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="35.14492"
+     y1="-11.593266"
+     x2="36.616413"
+     y2="-9.9549274"
+     id="line34"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="36.616413"
+     y1="-9.9549274"
+     x2="38.087902"
+     y2="-11.593266"
+     id="line36"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="38.087902"
+     y1="-11.593266"
+     x2="38.087902"
+     y2="-9.9549274"
+     id="line38"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="30.73044"
+     y1="-9.9549274"
+     x2="29.258949"
+     y2="-11.593266"
+     id="line40"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="29.258949"
+     y1="-11.593266"
+     x2="27.787457"
+     y2="-9.9549274"
+     id="line42"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="27.787457"
+     y1="-9.9549274"
+     x2="26.315964"
+     y2="-11.593266"
+     id="line44"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="26.315964"
+     y1="-11.593266"
+     x2="26.315964"
+     y2="-9.9549274"
+     id="line46"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="48.388348"
+     y1="-5.0399089"
+     x2="51.331337"
+     y2="-5.0399089"
+     id="line48"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="51.331337"
+     y1="-5.0399089"
+     x2="51.331337"
+     y2="-1.7632303"
+     id="line50"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="48.388348"
+     y1="-5.0399089"
+     x2="48.388348"
+     y2="-1.7632303"
+     id="line52"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="51.331337"
+     y1="-1.7632303"
+     x2="52.80283"
+     y2="-3.4015696"
+     id="line54"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="52.80283"
+     y1="-3.4015696"
+     x2="54.274319"
+     y2="-1.7632303"
+     id="line56"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="54.274319"
+     y1="-1.7632303"
+     x2="55.745811"
+     y2="-3.4015696"
+     id="line58"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="55.745811"
+     y1="-3.4015696"
+     x2="55.745811"
+     y2="-1.7632303"
+     id="line60"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="48.388348"
+     y1="-1.7632303"
+     x2="46.916859"
+     y2="-3.4015696"
+     id="line62"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="46.916859"
+     y1="-3.4015696"
+     x2="45.445366"
+     y2="-1.7632303"
+     id="line64"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="45.445366"
+     y1="-1.7632303"
+     x2="43.973873"
+     y2="-3.4015696"
+     id="line66"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="43.973873"
+     y1="-3.4015696"
+     x2="43.973873"
+     y2="-1.7632303"
+     id="line68"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="57.217308"
+     y1="11.343485"
+     x2="60.16029"
+     y2="11.343485"
+     id="line70"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="60.16029"
+     y1="11.343485"
+     x2="60.16029"
+     y2="14.620164"
+     id="line72"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="57.217308"
+     y1="11.343485"
+     x2="57.217308"
+     y2="14.620164"
+     id="line74"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="60.16029"
+     y1="14.620164"
+     x2="61.631783"
+     y2="12.981824"
+     id="line76"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="61.631783"
+     y1="12.981824"
+     x2="63.103275"
+     y2="14.620164"
+     id="line78"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="63.103275"
+     y1="14.620164"
+     x2="64.574768"
+     y2="12.981824"
+     id="line80"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="64.574768"
+     y1="12.981824"
+     x2="64.574768"
+     y2="14.620164"
+     id="line82"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="57.217308"
+     y1="14.620164"
+     x2="55.745811"
+     y2="12.981824"
+     id="line84"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="55.745811"
+     y1="12.981824"
+     x2="54.274319"
+     y2="14.620164"
+     id="line86"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="54.274319"
+     y1="14.620164"
+     x2="52.80283"
+     y2="12.981824"
+     id="line88"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="52.80283"
+     y1="12.981824"
+     x2="52.80283"
+     y2="14.620164"
+     id="line90"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="21.901485"
+     y1="3.151788"
+     x2="24.844471"
+     y2="3.151788"
+     id="line92"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="24.844471"
+     y1="3.151788"
+     x2="24.844471"
+     y2="6.4284663"
+     id="line94"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="21.901485"
+     y1="3.151788"
+     x2="21.901485"
+     y2="6.4284663"
+     id="line96"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="24.844471"
+     y1="6.4284663"
+     x2="26.315964"
+     y2="4.7901273"
+     id="line98"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="26.315964"
+     y1="4.7901273"
+     x2="27.787457"
+     y2="6.4284663"
+     id="line100"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="27.787457"
+     y1="6.4284663"
+     x2="29.258949"
+     y2="4.7901273"
+     id="line102"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="29.258949"
+     y1="4.7901273"
+     x2="29.258949"
+     y2="6.4284663"
+     id="line104"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="21.901485"
+     y1="6.4284663"
+     x2="20.429995"
+     y2="4.7901273"
+     id="line106"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="20.429995"
+     y1="4.7901273"
+     x2="18.9585"
+     y2="6.4284663"
+     id="line108"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="18.9585"
+     y1="6.4284663"
+     x2="17.487009"
+     y2="4.7901273"
+     id="line110"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="17.487009"
+     y1="4.7901273"
+     x2="17.487009"
+     y2="6.4284663"
+     id="line112"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="21.901485"
+     y1="19.535181"
+     x2="24.844471"
+     y2="19.535181"
+     id="line114"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="24.844471"
+     y1="19.535181"
+     x2="24.844471"
+     y2="22.811859"
+     id="line116"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="21.901485"
+     y1="19.535181"
+     x2="21.901485"
+     y2="22.811859"
+     id="line118"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="24.844471"
+     y1="22.811859"
+     x2="26.315964"
+     y2="21.173521"
+     id="line120"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="21.901485"
+     y1="22.811859"
+     x2="20.429995"
+     y2="21.173521"
+     id="line122"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="20.429995"
+     y1="21.173521"
+     x2="18.9585"
+     y2="22.811859"
+     id="line124"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="18.9585"
+     y1="22.811859"
+     x2="17.487009"
+     y2="21.173521"
+     id="line126"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="17.487009"
+     y1="21.173521"
+     x2="17.487009"
+     y2="22.811859"
+     id="line128"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="30.73044"
+     y1="19.535181"
+     x2="33.673428"
+     y2="19.535181"
+     id="line130"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="33.673428"
+     y1="19.535181"
+     x2="33.673428"
+     y2="22.811859"
+     id="line132"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="30.73044"
+     y1="19.535181"
+     x2="30.73044"
+     y2="22.811859"
+     id="line134"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="33.673428"
+     y1="22.811859"
+     x2="35.14492"
+     y2="21.173521"
+     id="line136"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="30.73044"
+     y1="22.811859"
+     x2="29.258949"
+     y2="21.173521"
+     id="line138"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="24.844471"
+     y1="21.173521"
+     x2="24.844471"
+     y2="22.811859"
+     id="line140"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="39.559395"
+     y1="19.535181"
+     x2="42.50238"
+     y2="19.535181"
+     id="line142"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="42.50238"
+     y1="19.535181"
+     x2="42.50238"
+     y2="22.811859"
+     id="line144"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="39.559395"
+     y1="19.535181"
+     x2="39.559395"
+     y2="22.811859"
+     id="line146"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="42.50238"
+     y1="22.811859"
+     x2="43.973873"
+     y2="21.173521"
+     id="line148"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="39.559395"
+     y1="22.811859"
+     x2="38.087902"
+     y2="21.173521"
+     id="line150"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="26.315964"
+     y1="19.535181"
+     x2="26.315964"
+     y2="21.173521"
+     id="line152"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="29.258949"
+     y1="19.535181"
+     x2="29.258949"
+     y2="21.173521"
+     id="line154"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="29.258949"
+     y1="19.535181"
+     x2="27.787457"
+     y2="22.811859"
+     id="line156"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="26.315964"
+     y1="19.535181"
+     x2="27.787457"
+     y2="22.811859"
+     id="line158"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="35.14492"
+     y1="19.535181"
+     x2="35.14492"
+     y2="21.173521"
+     id="line160"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="38.087902"
+     y1="19.535181"
+     x2="38.087902"
+     y2="21.173521"
+     id="line162"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="38.087902"
+     y1="19.535181"
+     x2="36.616413"
+     y2="22.811859"
+     id="line164"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="35.14492"
+     y1="19.535181"
+     x2="36.616413"
+     y2="22.811859"
+     id="line166"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="43.973873"
+     y1="19.535181"
+     x2="43.973873"
+     y2="21.173521"
+     id="line168"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="46.916859"
+     y1="19.535181"
+     x2="46.916859"
+     y2="21.173521"
+     id="line170"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="46.916859"
+     y1="19.535181"
+     x2="45.445366"
+     y2="22.811859"
+     id="line172"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="43.973873"
+     y1="19.535181"
+     x2="45.445366"
+     y2="22.811859"
+     id="line174"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="48.388348"
+     y1="19.535181"
+     x2="51.331337"
+     y2="19.535181"
+     id="line176"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="51.331337"
+     y1="19.535181"
+     x2="51.331337"
+     y2="22.811859"
+     id="line178"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="48.388348"
+     y1="19.535181"
+     x2="48.388348"
+     y2="22.811859"
+     id="line180"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="51.331337"
+     y1="22.811859"
+     x2="52.80283"
+     y2="21.173521"
+     id="line182"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="46.916859"
+     y1="21.173521"
+     x2="48.388348"
+     y2="22.811859"
+     id="line184"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="57.217308"
+     y1="19.535181"
+     x2="60.16029"
+     y2="19.535181"
+     id="line186"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="60.16029"
+     y1="19.535181"
+     x2="60.16029"
+     y2="22.811859"
+     id="line188"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="57.217308"
+     y1="19.535181"
+     x2="57.217308"
+     y2="22.811859"
+     id="line190"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="60.16029"
+     y1="22.811859"
+     x2="61.631783"
+     y2="21.173521"
+     id="line192"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="61.631783"
+     y1="21.173521"
+     x2="63.103275"
+     y2="22.811859"
+     id="line194"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="63.103275"
+     y1="22.811859"
+     x2="64.574768"
+     y2="21.173521"
+     id="line196"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="64.574768"
+     y1="21.173521"
+     x2="64.574768"
+     y2="22.811859"
+     id="line198"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="52.80283"
+     y1="19.535181"
+     x2="52.80283"
+     y2="21.173521"
+     id="line200"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="55.745811"
+     y1="19.535181"
+     x2="55.745811"
+     y2="21.173521"
+     id="line202"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="55.745811"
+     y1="19.535181"
+     x2="54.274319"
+     y2="22.811859"
+     id="line204"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="52.80283"
+     y1="19.535181"
+     x2="54.274319"
+     y2="22.811859"
+     id="line206"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="55.745811"
+     y1="21.173521"
+     x2="57.217308"
+     y2="22.811859"
+     id="line208"
+     style="stroke:#000000;stroke-width:0.15526766" />
+  <line
+     x1="16.015516"
+     y1="-18.146624"
+     x2="65.273727"
+     y2="-18.146624"
+     id="line210"
+     style="stroke:#000000;stroke-width:0.07763384" />
+  <polygon
+     points="49.475,-5.75 49.975,-6 49.475,-6.25 49.475,-5.75 "
+     id="polygon212"
+     style="fill:#000000;stroke:none;stroke-width:0.05"
+     transform="matrix(1.4714924,0,0,1.6383394,-7.528363,-8.3165877)" />
+  <line
+     x1="16.015516"
+     y1="-1.7632303"
+     x2="65.273727"
+     y2="-1.7632303"
+     id="line214"
+     style="stroke:#000000;stroke-width:0.07763384" />
+  <polygon
+     points="49.475,4.25 49.975,4 49.475,3.75 49.475,4.25 "
+     id="polygon216"
+     style="fill:#000000;stroke:none;stroke-width:0.05"
+     transform="matrix(1.4714924,0,0,1.6383394,-7.528363,-8.3165877)" />
+  <line
+     x1="16.015516"
+     y1="6.4284663"
+     x2="65.273727"
+     y2="6.4284663"
+     id="line218"
+     style="stroke:#000000;stroke-width:0.07763384" />
+  <polygon
+     points="49.475,9.25 49.975,9 49.475,8.75 49.475,9.25 "
+     id="polygon220"
+     style="fill:#000000;stroke:none;stroke-width:0.05"
+     transform="matrix(1.4714924,0,0,1.6383394,-7.528363,-8.3165877)" />
+  <line
+     x1="16.015516"
+     y1="-9.9549274"
+     x2="65.273727"
+     y2="-9.9549274"
+     id="line222"
+     style="stroke:#000000;stroke-width:0.07763384" />
+  <polygon
+     points="49.475,-0.75 49.975,-1 49.475,-1.25 49.475,-0.75 "
+     id="polygon224"
+     style="fill:#000000;stroke:none;stroke-width:0.05"
+     transform="matrix(1.4714924,0,0,1.6383394,-7.528363,-8.3165877)" />
+  <line
+     x1="16.015516"
+     y1="14.620164"
+     x2="65.273727"
+     y2="14.620164"
+     id="line226"
+     style="stroke:#000000;stroke-width:0.07763384" />
+  <polygon
+     points="49.475,14.25 49.975,14 49.475,13.75 49.475,14.25 "
+     id="polygon228"
+     style="fill:#000000;stroke:none;stroke-width:0.05"
+     transform="matrix(1.4714924,0,0,1.6383394,-7.528363,-8.3165877)" />
+  <line
+     x1="16.015516"
+     y1="22.811859"
+     x2="65.273727"
+     y2="22.811859"
+     id="line230"
+     style="stroke:#000000;stroke-width:0.07763384" />
+  <polygon
+     points="49.475,19.25 49.975,19 49.475,18.75 49.475,19.25 "
+     id="polygon232"
+     style="fill:#000000;stroke:none;stroke-width:0.05"
+     transform="matrix(1.4714924,0,0,1.6383394,-7.528363,-8.3165877)" />
+  <line
+     x1="41.030891"
+     y1="-16.508286"
+     x2="41.030891"
+     y2="-23.839853"
+     id="line234"
+     style="stroke:#000000;stroke-width:0.07763384" />
+  <polygon
+     points="33.25,-9.475 33,-9.975 32.75,-9.475 33.25,-9.475 "
+     id="polygon236"
+     style="fill:#000000;stroke:none;stroke-width:0.05"
+     transform="matrix(1.4714924,0,0,1.6383394,-7.528363,-8.3165877)" />
+  <line
+     x1="41.030891"
+     y1="-8.3165884"
+     x2="41.030891"
+     y2="-15.648156"
+     id="line238"
+     style="stroke:#000000;stroke-width:0.07763384" />
+  <polygon
+     points="33.25,-4.475 33,-4.975 32.75,-4.475 33.25,-4.475 "
+     id="polygon240"
+     style="fill:#000000;stroke:none;stroke-width:0.05"
+     transform="matrix(1.4714924,0,0,1.6383394,-7.528363,-8.3165877)" />
+  <line
+     x1="41.030891"
+     y1="16.258503"
+     x2="41.030891"
+     y2="8.9269333"
+     id="line242"
+     style="stroke:#000000;stroke-width:0.07763384" />
+  <polygon
+     points="33.25,10.525 33,10.025 32.75,10.525 33.25,10.525 "
+     id="polygon244"
+     style="fill:#000000;stroke:none;stroke-width:0.05"
+     transform="matrix(1.4714924,0,0,1.6383394,-7.528363,-8.3165877)" />
+  <line
+     x1="41.030891"
+     y1="8.0668058"
+     x2="41.030891"
+     y2="0.73523748"
+     id="line246"
+     style="stroke:#000000;stroke-width:0.07763384" />
+  <polygon
+     points="33.25,5.525 33,5.025 32.75,5.525 33.25,5.525 "
+     id="polygon248"
+     style="fill:#000000;stroke:none;stroke-width:0.05"
+     transform="matrix(1.4714924,0,0,1.6383394,-7.528363,-8.3165877)" />
+  <line
+     x1="41.030891"
+     y1="-0.12489084"
+     x2="41.030891"
+     y2="-7.45646"
+     id="line250"
+     style="stroke:#000000;stroke-width:0.07763384" />
+  <polygon
+     points="33.25,0.525 33,0.025 32.75,0.525 33.25,0.525 "
+     id="polygon252"
+     style="fill:#000000;stroke:none;stroke-width:0.05"
+     transform="matrix(1.4714924,0,0,1.6383394,-7.528363,-8.3165877)" />
+  <line
+     x1="41.030891"
+     y1="24.450199"
+     x2="41.030891"
+     y2="17.118629"
+     id="line254"
+     style="stroke:#000000;stroke-width:0.07763384" />
+  <polygon
+     points="33.25,15.525 33,15.025 32.75,15.525 33.25,15.525 "
+     id="polygon256"
+     style="fill:#000000;stroke:none;stroke-width:0.05"
+     transform="matrix(1.4714924,0,0,1.6383394,-7.528363,-8.3165877)" />
+  <line
+     x1="26.315964"
+     y1="-9.9549274"
+     x2="26.315964"
+     y2="19.535181"
+     id="line258"
+     style="stroke:#000000;stroke-width:0.07763384;stroke-dasharray:0.93160585, 0.93160585" />
+  <line
+     x1="29.258949"
+     y1="-9.9549274"
+     x2="29.258949"
+     y2="19.535181"
+     id="line260"
+     style="stroke:#000000;stroke-width:0.07763384;stroke-dasharray:0.93160585, 0.93160585" />
+  <line
+     x1="35.14492"
+     y1="-18.146624"
+     x2="35.14492"
+     y2="19.535181"
+     id="line262"
+     style="stroke:#000000;stroke-width:0.07763384;stroke-dasharray:0.93160585, 0.93160585" />
+  <line
+     x1="38.087902"
+     y1="-18.146624"
+     x2="38.087902"
+     y2="19.535181"
+     id="line264"
+     style="stroke:#000000;stroke-width:0.07763384;stroke-dasharray:0.93160585, 0.93160585" />
+  <line
+     x1="43.973873"
+     y1="-18.146624"
+     x2="43.973873"
+     y2="19.535181"
+     id="line266"
+     style="stroke:#000000;stroke-width:0.07763384;stroke-dasharray:0.93160585, 0.93160585" />
+  <line
+     x1="46.916859"
+     y1="-18.146624"
+     x2="46.916859"
+     y2="19.535181"
+     id="line268"
+     style="stroke:#000000;stroke-width:0.07763384;stroke-dasharray:0.93160585, 0.93160585" />
+  <line
+     x1="52.80283"
+     y1="-1.7632303"
+     x2="52.80283"
+     y2="19.535181"
+     id="line270"
+     style="stroke:#000000;stroke-width:0.07763384;stroke-dasharray:0.93160585, 0.93160585" />
+  <line
+     x1="55.745811"
+     y1="-1.7632303"
+     x2="55.745811"
+     y2="19.535181"
+     id="line272"
+     style="stroke:#000000;stroke-width:0.07763384;stroke-dasharray:0.93160585, 0.93160585" />
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="16.801222"
+     y="-23.305531"
+     id="text2513"
+     sodipodi:linespacing="100%"><tspan
+       sodipodi:role="line"
+       id="tspan2515"
+       x="16.801222"
+       y="-23.305531">X(jω)</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="64.976166"
+     y="-16.441553"
+     id="text2517"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2519"
+       x="64.976166"
+       y="-16.441553">ω</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="64.907677"
+     y="-8.4008131"
+     id="text2521"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2523"
+       x="64.907677"
+       y="-8.4008131">ω</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="64.907677"
+     y="-0.20217516"
+     id="text2525"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2527"
+       x="64.907677"
+       y="-0.20217516">ω</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="64.844124"
+     y="8.0600185"
+     id="text2529"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2531"
+       x="64.844124"
+       y="8.0600185">ω</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="64.780563"
+     y="16.067991"
+     id="text2533"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2535"
+       x="64.780563"
+       y="16.067991">ω</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="64.780563"
+     y="24.203075"
+     id="text2537"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2539"
+       x="64.780563"
+       y="24.203075">ω</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="16.838928"
+     y="-16.716303"
+     id="text2541"
+     sodipodi:linespacing="100%"><tspan
+       sodipodi:role="line"
+       id="tspan2543"
+       x="16.838928"
+       y="-16.716303">X(j(ω+ω )</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:0.61569232px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="21.313652"
+     y="-16.441555"
+     id="text2545"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2547"
+       x="21.313652"
+       y="-16.441555">д</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="16.800049"
+     y="-8.5812206"
+     id="text2549"
+     sodipodi:linespacing="100%"><tspan
+       sodipodi:role="line"
+       id="tspan2551"
+       x="16.800049"
+       y="-8.5812206">X(j(ω−ω )</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:0.61569232px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="21.291468"
+     y="-8.3077679"
+     id="text2553"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2555"
+       x="21.291468"
+       y="-8.3077679">д</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="16.800049"
+     y="-0.13265845"
+     id="text2557"
+     sodipodi:linespacing="100%"><tspan
+       sodipodi:role="line"
+       id="tspan2559"
+       x="16.800049"
+       y="-0.13265845">X(j(ω+2ω )</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:0.61569232px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="21.973881"
+     y="0.14208938"
+     id="text2561"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2563"
+       x="21.973881"
+       y="0.14208938">д</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="16.927158"
+     y="9.2735319"
+     id="text2565"
+     sodipodi:linespacing="100%"><tspan
+       sodipodi:role="line"
+       id="tspan2567"
+       x="16.927158"
+       y="9.2735319">X(j(ω−2ω )</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:0.61569232px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="22.10099"
+     y="9.5482798"
+     id="text2569"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2571"
+       x="22.10099"
+       y="9.5482798">д</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="17.029598"
+     y="16.268915"
+     id="text2573"
+     sodipodi:linespacing="100%"><tspan
+       sodipodi:role="line"
+       id="tspan2575"
+       x="17.029598"
+       y="16.268915">X (jω)</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:0.61569232px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="17.795925"
+     y="16.605921"
+     id="text2577"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2579"
+       x="17.795925"
+       y="16.605921">д</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="49.400177"
+     y="-0.45639658"
+     id="text2581"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2583"
+       x="49.400177"
+       y="-0.45639658">ω</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:0.61569232px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="50.272697"
+     y="-0.17268492"
+     id="text2585"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2587"
+       x="50.272697"
+       y="-0.17268492">д</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="31.195299"
+     y="-8.7682457"
+     id="text2589"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2591"
+       x="31.195299"
+       y="-8.7682457">−ω</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:0.61569232px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="32.957596"
+     y="-8.548089"
+     id="text2593"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2595"
+       x="32.957596"
+       y="-8.548089">д</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="21.789108"
+     y="7.6290302"
+     id="text2597"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2599"
+       x="21.789108"
+       y="7.6290302">−2ω</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:0.61569232px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="24.250511"
+     y="7.9127421"
+     id="text2601"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2603"
+       x="24.250511"
+       y="7.9127421">д</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="57.888535"
+     y="15.827669"
+     id="text2605"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2607"
+       x="57.888535"
+       y="15.827669">2ω</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:0.61569232px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="59.460163"
+     y="16.047825"
+     id="text2609"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2611"
+       x="59.460163"
+       y="16.047825">д</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="49.456745"
+     y="-16.944038"
+     id="text2637"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2639"
+       x="49.456745"
+       y="-16.944038">ω</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:0.61569232px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="50.329266"
+     y="-16.660328"
+     id="text2641"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2643"
+       x="50.329266"
+       y="-16.660328">д</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="31.110172"
+     y="-16.871553"
+     id="text2647"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2649"
+       x="31.110172"
+       y="-16.871553">−ω</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:0.61569232px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="32.872467"
+     y="-16.651396"
+     id="text2651"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2653"
+       x="32.872467"
+       y="-16.651396">д</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="30.983061"
+     y="23.867418"
+     id="text2572"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2574"
+       x="30.983061"
+       y="23.867418">−ω</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:0.61569232px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="32.745358"
+     y="24.087576"
+     id="text2576"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2578"
+       x="32.745358"
+       y="24.087576">д</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="21.926428"
+     y="24.004416"
+     id="text2588"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2590"
+       x="21.926428"
+       y="24.004416">−2ω</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:0.61569232px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="24.387831"
+     y="24.288128"
+     id="text2592"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2594"
+       x="24.387831"
+       y="24.288128">д</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="49.43568"
+     y="23.772085"
+     id="text2596"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2598"
+       x="49.43568"
+       y="23.772085">ω</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:0.61569232px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="50.308201"
+     y="24.055798"
+     id="text2600"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2602"
+       x="50.308201"
+       y="24.055798">д</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:1.07746148px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="57.91637"
+     y="23.909084"
+     id="text2620"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2622"
+       x="57.91637"
+       y="23.909084">2ω</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:0.61569232px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+     x="59.487999"
+     y="24.12924"
+     id="text2624"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan2626"
+       x="59.487999"
+       y="24.12924">д</tspan></text>
+</svg>

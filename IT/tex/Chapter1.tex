@@ -1,0 +1,984 @@
+\chapter{Обзор проекта}
+
+\section{Инструментальные средства}
+
+\textit{Apache HTTP-сервер}~"--- свободный веб-сервер. С апреля 1996 и
+до настоящего времени является самым популярным HTTP-сервером в
+Интернете. Основными достоинствами Apache считаются надёжность и
+гибкость конфигурации. Он позволяет подключать внешние модули для
+предоставления данных, использовать СУБД для аутентификации
+пользователей, модифицировать сообщения об ошибках и
+т. д.~\cite{wiki:Apache}
+
+\textit{PHP}~"--- язык сценариев, встраиваемый в HTML на стороне
+сервера, предназначенный для создания динамических веб-страниц и
+принадлежащий к категории продуктов с открытым исходным кодом. Не
+налагая ограничений на броузеры, он предоставляет простое и
+универсальное, переносимое между платформами решение для электронной
+коммерции, сложных веб-приложений, включая управляемые базами данных.
+
+\textit{MySQL}~"--- свободная система управления базами данных
+(СУБД). Существует множество пакетов СУБД.  Эти программы обладают
+различными возможностями, гибкостью и ценой. Однако все они работают
+приблизительно одинаково. В данной курсовой работе используются базы
+данных MySQL. Эта программа часто используется вместе с PHP по
+нескольким причинам. Во-первых, MySQL обладает очень широкими
+возможностями. Она обладает большинством возможностей, предоставляемых
+в дорогих и мощных пакетах для работы в базами данных. Базы данных
+MySQL используют стандартную форму широко известного языка SQL. MySQL
+выпускается с открытым кодом и распространяется бесплатно, работает с
+большинством операционных систем и может использоваться со многими
+языками программирования. Она работает очень быстро даже с большими
+наборами данных. Кроме того, в PHP встроено множество функций для
+поддержки баз данных MySQL~\cite{Harris:PHP}.
+
+\section{Преимущества динамического Web-сайта}
+
+Каждая отображаемая страница динамических Web-сайтов основана на
+шаблонной странице, в которую вставляется постоянно меняющееся
+информационное наполнение, которое обычно хранится в базе
+данных. Когда пользователь запрашивает страницу, соответствующая
+информация извлекается из базы, вставляется в шаблон, образуя новую
+Web-страницу, и пересылается Web-сервером в пользовательский браузер,
+который и отображает её должным образом. Кроме информационного
+наполнения, динамически могут создаваться также и элементы навигации
+по Web-сайту. Таким образом, если вам нужно обновить содержимое своего
+сайта, вы просто добавляете текст для новой страницы, который затем
+вставляется в базу данных с помощью определённого механизма. В
+результате получается, что Web-сайт как бы сам себя обновляет.
+
+Сразу после того как динамический сайт создан и запущен в работу,
+начинают проявляться его преимущества.  Теперь в вашем распоряжении
+имеется сравнительно небольшое количество шаблонных страниц, с помощью
+которых генерируются сотни, а может быть, и тысячи Web-страниц. Вид
+(дизайн) сайта может быть легко изменён с помощью модификации этих
+шаблонов. Изменение содержимого базы данных можно производить через
+Web-интерфейс с использованием HTML-формы, не вторгаясь при этом в
+технические детали каждой специфической СУБД~\cite{Evdokimov}.
+
+\section{Как работает динамический Web-сайт}
+
+Основная операция Web-сервера проиллюстрирована на
+рисунке~\ref{Client-server}.
+
+\begin{figure}[ht]
+\center
+\includegraphics[width=0.6\textwidth]{Client-server}
+\caption{Отношение типа клиент/сервер}\label{Client-server}
+\end{figure}
+
+В данном примере клиент соединяется с Web-сервером (в нашем случае,
+сервер Apache) и запрашивает страницу HTML. Когда клиент соединился,
+сервер Apache возвращает требуемую страницу клиенту. В этом примере
+сервер Apache действует как посредник между клиентом и сервером.
+
+Для сервера, отсылающего обычные статические страницы, такая
+архитектура подходит. Архитектура же сайта, который включает в себя
+базу данных, несколько сложнее~\cite{Laura}. Приложения Web-баз
+данных, которые будут разрабатываться в этой курсовой работе,
+наследуют глобальную структуру Web-баз данных, показанную на
+рисунке~\ref{Architecture}.
+
+\begin{figure}[ht]
+\center
+\includegraphics[width=0.7\textwidth]{Architecture}
+\caption{Базовая  архитектура  Web-баз  данных}\label{Architecture}
+\end{figure}
+
+Типичная транзакция Web-базы данных состоит из этапов, обозначенных
+буквами на рисунке~\ref{Architecture}.
+
+\begin{enumerate}
+\item Web-браузер пользователя отправляет HTTP-запрос определенной
+  Web-страницы.
+\item Web-сервер принимает запрос и передает его механизму РНР на
+  обработку.
+\item Механизм РНР начинает синтаксический анализ сценария.  В
+  сценарии присутствует команда подключения к базе данных и выполнения
+  запроса в ней.  РНР открывает соединение с сервером MySQL и
+  отправляет необходимый запрос.
+\item Сервер MySQL принимает запрос в базу данных, обрабатывает его, а
+  затем отправляет результаты обратно в механизм РНР.
+\item Механизм РНР завершает выполнение сценария, форматируя
+  результаты запроса в виде HTML, после чего отправляет результаты в
+  HTML-формате Web-серверу.
+\item Web-сервер пересылает HTML в браузер, с помощью которого
+  пользователь просматривает страницу.
+\end{enumerate}
+
+\chapter{Реализация проекта}
+
+\section{Создание базы данных}
+
+Общая схема хранения данных в базе данных для данного проекта
+представлена на рисунке~\ref{fig:database}.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.8\textwidth]{database}
+  \caption{База данных}
+  \label{fig:database}
+\end{figure}
+
+База данных содержит четыре таблицы:
+
+\begin{enumerate}
+\item \texttt{cat\_relate}. Эта таблица необходима для того, чтобы
+  однозначно определить к какому из разделов относится подраздел;
+\item \texttt{categories}. В данной таблице содержатся названия
+  разделов и подразделов, отображаемые в меню навигации (поле
+  <<\texttt{parent}>> указывает на уровень раздела);
+\item \texttt{stories}.  В таблице хранятся все статьи сайта;
+\item \texttt{users}. Таблица содержит список зарегистрированных
+  пользователей сайта.
+\end{enumerate}
+
+Для сайта реализовано три категории пользователей:
+
+\begin{enumerate}
+\item администратор --- способен добавлять новые статьи, удалять
+  содержимое сайта, добавлять или удалять разделы и подразделы;
+\item зарегистрированный пользователь --- имеет право добавлять новые статьи
+\item незарегистрированный пользователь --- способен лишь
+  просматривать содержимое сайта.
+\end{enumerate}
+
+В данном проекте реализована возможность хранения паролей в
+зашифрованном виде с помощью алгоритма хеширования
+MD5~\cite{wiki:MD5}. Каждый пользователь имеет свой пароль и его знает
+только пользователь. Получить настоящий пароль можно только полным
+перебором. Результат преобразования представляется как
+последовательность из 32 шестнадцатеричных чисел. К примеру, хэш
+пароля администратора
+сайта~--- \texttt{21232f297a57a5a743894a0e4a801fc3}.
+
+\section{Построение основной части системы}
+\subsection{Автоматизация подключения к СУБД}
+
+Обычно на сайте существует сразу несколько скриптов, которым нужен
+доступ к одной и той же базе данных. Соответственно, код,
+ответственный за подключение к СУБД, лучше всего выделить в отдельный
+файл, который потом будет подключаться ко всем программам. В
+листинге~\ref{db.php} приведён php-файл, осуществляющий подключение к
+базе данных, а в листинге~\ref{config.php} определены переменные,
+необходимые для подключения.
+
+\begin{lstlisting}[caption = {db.php}, label = {db.php}]
+<?php
+require("config.php");
+$db = mysql_connect($dbhost, $dbuser, $dbpassword);
+mysql_query('SET NAMES utf8');
+mysql_select_db($dbdatabase, $db);
+?>
+\end{lstlisting}
+
+\begin{lstlisting}[caption = {config.php}, label = {config.php}]
+<?php
+$dbhost = "localhost";
+$dbuser = "root";
+$dbpassword = "maxim";
+$dbdatabase = "dssbase";
+$config_basedir = "http://localhost/dss/";
+?>
+\end{lstlisting}
+
+\subsection{Создание вспомогательных функций}
+
+Для данного проекта были созданы две вспомогательные фунцкции:
+
+\begin{enumerate}
+\item pf\_fix\_slashes();
+\item pf\_check\_number.
+\end{enumerate}
+
+В PHP существует такое понятие, как <<магические кавычки>>. Магические
+кавычки~--- эффект автоматической замены кавычки на обратный слэш и
+кавычку при операциях ввода/вывода в PHP. Первая функция реализует
+экранирование символов в случае, если \texttt{magic\_quotes\_gpc}
+отключена.
+
+\begin{lstlisting}[caption = {functions.php}, label = {functions.php}]
+  <?php
+function pf_fix_slashes($string) {
+   if (get_magic_quotes_gpc() == 1) {
+      return($string);
+   }
+   else {
+      return(addslashes($string));
+   }
+}
+function pf_check_number($value) {
+   if(isset($value) == FALSE) {
+      $error = 1;
+   }
+   if(is_numeric($value) == FALSE) {
+      $error = 1;
+   }
+   if($error == 1) {
+      return FALSE;
+   }
+   else {
+      return TRUE;
+   }
+}
+?>
+\end{lstlisting}
+
+\subsection{Интерфейсная часть}
+
+Сценарии, приведённый в листингах~\ref{header.php}, \ref{footer.php}
+реализуют шаблонную часть страницы. Они отображаюся в верхней и
+нижней части каждой страницы. В результате любой вывод, генерируемый
+сценарием, отображается в ячейке основного содержимого страницы.
+В дальнейшем два этих сценария будут подключатся к каждой странице
+директивой \texttt{require}.
+
+\begin{lstlisting}[caption = {header.php}, label = {header.php}]
+  <?php
+   session_start();
+   require("config.php");
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+ "http://www.w3.org/TR/html4/loose.dtd">
+<head>
+   <title><?php echo $config_sitename; ?></title>
+   <link href="stylesheet.css" rel="stylesheet">
+   <meta http-equiv="content-type" content="nt-type" ; charset=UTF-8" >
+</head>
+<body>
+   <div id="header">
+   <h1>Цифровая подпись</h1>
+   </div>
+   <div id="menu">
+      <a href="<?php echo $config_basedir; ?>">На главную</a>
+   </div>
+   <div id="container">
+      <div id="bar">
+         <?php
+            require("bar.php");
+         ?>
+      </div>
+      <div id="main">
+\end{lstlisting}
+
+\begin{lstlisting}[caption = {footer.php}, label = {footer.php}]
+     </div>
+</div>
+</body>
+</html>
+\end{lstlisting}
+
+\subsection{Создание иерархического меню}
+
+Меню содержит список разделов и подразделов сайта. Пользователь
+щелкнул на одном из разделов сайта. Далее поворот событий зависит от
+того, есть ли у раздела подразделы. Если в разделее есть подразделы,
+то будет выведен список подразделов (меню станет
+иерархическим). Внешний вид меню представен на рисунке~\ref{menu}.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.4\textwidth]{menu}
+  \caption{Меню сайта}
+  \label{menu}
+\end{figure}
+
+Код сценария \texttt{ bar.php} приводится в листинге~\ref{bar.php}.
+
+\begin{lstlisting}[caption = {bar.php}, label = {bar.php}]
+  <?php
+session_start();
+require("db.php");
+
+echo "<table class='visible' width='100%'cellspacing=0 cellpadding=5>";
+echo "<tr><th class='visible'>Информация</th></tr>";
+echo "<tr><td>";
+if($_SESSION['SESS_USERNAME']) {
+   echo "Вы вошли как <strong>" . $_SESSION['SESS_USERNAME']
+ . "</strong> - <a href='userlogout.php'>Выйти</a>";
+   echo "<p>";
+   if($_SESSION['SESS_USERLEVEL'] > 0) {
+      echo "<a href='addstory.php'>Написать статью</a><br />";
+   }
+   if($_SESSION['SESS_USERLEVEL'] == 10) {
+      echo "<a href='addcat.php'>Новый раздел</a><br />";
+   }
+   echo "<p>";
+}
+else {
+   echo "<a href='userlogin.php'>Войти</a>";
+}
+echo "</td></tr>";
+echo "</table>";
+
+echo "<h1>Темы</h1>";
+$sql = "SELECT * FROM categories WHERE parent = 1;";
+$result = mysql_query($sql);
+$numrows = mysql_num_rows($result);
+if($numrows == 0) {
+   echo "<p>No categories</p>";
+}
+
+else {
+   while($row = mysql_fetch_assoc($result)) {
+      if($_SESSION['SESS_USERLEVEL'] == 10) {
+         echo "<a href='deletecat.php?id=" . $row['id'] . "'>[X]</a> ";
+      }
+      echo "<a href='index.php?parentcat=" . $row['id'] . "'>"
+ . $row['category'] . "</a><br>";
+
+     if($row['id'] == $_SESSION['SESS_PARENT']) {
+        $childsql = "SELECT categories.id, categories.category
+FROM categories INNER JOIN cat_relate
+ON categories.id = cat_relate.child_id
+WHERE cat_relate.parent_id = " . $_SESSION['SESS_PARENT'] . ";";
+        $childresult = mysql_query($childsql);
+
+while($childrow = mysql_fetch_assoc($childresult)) {
+           if($_SESSION['SESS_USERLEVEL'] == 10) {
+              echo "<a href='deletecat.php?id=" . $childrow['id']
+. "'>[X]</a> ";
+           }
+           echo " &bull; <a href='index.php?parentcat=" . $row['id']
+. "&amp;childcat=" . $childrow['id'] . "'>" . $childrow['category']
+. "</a><br>";
+        }
+     }
+   }
+}
+?>
+\end{lstlisting}
+
+В данной программе используются \textit{сессии}. Они представляют
+собой механизм, позволяющий хранить некоторые (и произвольные) данные,
+индивидуальные для каждого пользователя, между запусками сценария. На
+странице анализируются идентификаторы пользователей~--- переменные,
+хранящиеся в сессии. 
+
+Если у авторизованного пользователя идентификатор \texttt{10}
+(администратор ресурса), то слева от категорий отображается ссылка на
+удаление раздела. 
+
+На рисунке~\ref{fig:menu_admin} показан вид меню для аминистратора.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.4\textwidth]{menu_admin}
+  \caption{Вид меню для администратора}
+  \label{fig:menu_admin}
+\end{figure}
+
+Для повышения удобства пользованием сайта была создана информационная
+панель (см. рисунок~\ref{fig:panel}), которая отображает информацию о пользователе и о списке его
+привелегий. Внешний вид панели зависит от значения переменной
+\texttt{SESS\_USERLEVEL}. Зарегистрированные пользователи могут
+добавлять новые статьи, администратор способен также добавлять новые
+разделы и подразделы.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.4\textwidth]{panel}
+  \caption{Информационная панель}
+  \label{fig:panel}
+\end{figure}
+
+\subsection{Главная страница сайта}
+
+Главной страницей сайта будет программа \texttt{index.php}, и она
+выполняет три основные цели:
+
+\begin{enumerate}
+\item установливает переменную сессии для раздела и подраздела,
+  выбранных пользователем;
+\item при выборе раздела или подраздела выводит список статей в данной
+  категории;
+\item если не выбрана ни одна из категорий, выводит на страницу 5
+  последних статей.
+\end{enumerate}
+
+Переменные метода \texttt{GET}, которые передаются на странице,
+определяют функциональность страницы. Если переменные \texttt{GET}
+отсутствуют, на странице отображаются последние статьи из всех
+имеющихся категорий. Если странице передаётся переменная
+\texttt{parentcat}, то будут выводиться статьи в этой категории. Если
+передаются обе переменные \texttt{parentcat} и \texttt{childcat}, то
+отображаются статьи для текущего подраздела.
+
+Переменная \texttt{\$currentcat} определяет текущую категорию. У неё
+три возможных состояния:
+
+\begin{enumerate}
+\item Если существует только переменная \texttt{parentcat}, то
+  \texttt{currentcat} присваивается её значение.
+\item Если существует переменная \texttt{childcat}, то
+  \texttt{currentcat} присваивается её значение.
+\item Если отсутствуют  обе переменные, значение \texttt{currentcat}
+  устанавливается в \texttt{0}.
+\end{enumerate}
+
+Внешний вид главной страницы показан на рисунке~\ref{fig:main_page}.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{main_page}
+  \caption{Главная страница сайта}
+  \label{fig:main_page}
+\end{figure}
+
+\begin{lstlisting}[caption = {index.php}, label = {index.php}]
+  <?php
+require("db.php");
+session_register("SESS_PARENT");
+session_register("SESS_CHILD");
+if(isset($_GET['parentcat']) && isset($_GET['childcat'])) {
+   if(is_numeric($_GET['parentcat'])) {
+      $_SESSION['SESS_PARENT'] = $_GET['parentcat'];
+   }
+   if(is_numeric($_GET['childcat'])) {
+      $currentcat = $_GET['childcat'];
+      $_SESSION['SESS_CHILD'] = $_GET['childcat'];
+   }
+}
+else if(isset($_GET['parentcat'])) {
+   if(is_numeric($_GET['parentcat'])) {
+      $currentcat = $_GET['parentcat'];
+      $_SESSION['SESS_PARENT'] = $_GET['parentcat'];
+      $_SESSION['SESS_CHILD'] = 0;
+   }
+}
+else {
+   $currentcat = 0;
+}
+
+require("header.php");
+if($currentcat == 0) {
+   $sql = "SELECT * FROM stories ORDER BY dateposted DESC LIMIT 5;";
+}
+
+else {
+   $parentsql = "SELECT parent FROM categories WHERE id = "
+ . $currentcat . ";";
+   $parentres = mysql_query($parentsql);
+   $parentrow = mysql_fetch_assoc($parentres);
+
+   if($parentrow['parent'] == 1) {
+      $sql = sprintf("SELECT stories.* FROM stories INNER JOIN
+ cat_relate ON stories.cat_id = cat_relate.child_id WHERE
+ cat_relate.parent_id = %d UNION SELECT stories.* FROM stories WHERE
+ stories.cat_id = %d;" , $currentcat, $currentcat);
+   }
+   else {
+      $sql = "SELECT * FROM stories WHERE cat_id = " . $currentcat .
+";";
+   }
+}
+
+$result = mysql_query($sql);
+$numrows = mysql_num_rows($result);
+
+if($numrows == 0) {
+   echo "<h1>No Stories</h1>";
+   echo "<p>There are currently no stories in this category.   </p>";
+}
+else {
+   while($row = mysql_fetch_assoc($result)) {
+      if($_SESSION['SESS_USERLEVEL'] == 10) {
+         echo "<a href='deletestory.php?id=" . $row['id']
+ . "'>[X]</a> ";
+      }
+      echo "<strong><a href='viewstory.php?id=" . $row['id']
+         . "'>"
+         . $row['subject']
+         . "</a></strong><br />";
+      echo date("D jS F Y g.iA", strtotime($row['dateposted']));
+      echo "<p>" . $row['body'] . "</p>";
+   }
+}
+
+require("footer.php");
+?>
+\end{lstlisting}
+
+\section{Прикладная часть}
+
+\subsection{Авторизация пользователей}
+
+Следующий шаг~--- это создание страницы для входа на сайт. Эта
+страница будет содержать форму для ввода имени пользователя и пароля,
+а также сценарии РНР, выполняющие поиск введенных имени и пароля в
+таблице списка пользователей. Если такой пользователь есть в списке,
+ему будут открыты все страницы сайта, в противном случае он получит
+только права гостя (обычного посетителя).
+
+\begin{lstlisting}[caption = {userlogin.php}, label = {userlogin.php}]
+ <?php
+session_start();
+require("config.php");
+require("db.php");
+require("functions.php");
+if($_SESSION['SESS_USERNAME']) {
+   header("Location: " . $config_basedir . "userhome.php");
+}
+
+if($_POST['submit']) {
+   $sql = "SELECT * FROM users WHERE username = '"
+ . pf_fix_slashes($_POST['username']) . "' AND password = '"
+ . md5(pf_fix_slashes($_POST['password'])) . "'";
+   $result = mysql_query($sql);
+   $numrows = mysql_num_rows($result);
+
+   if($numrows == 1) {
+      $row = mysql_fetch_assoc($result);
+      session_register("SESS_USERNAME");
+      session_register("SESS_USERID");
+      session_register("SESS_USERLEVEL");
+      $_SESSION['SESS_USERNAME'] = $row['username'];
+      $_SESSION['SESS_USERID'] = $row['id'];
+      $_SESSION['SESS_USERLEVEL'] = $row['level'];
+      header("Location: " . $config_basedir);
+   }
+   else {
+      header("Location:".$config_basedir."/userlogin.php?error=1");
+   }
+}
+
+else {
+   require("header.php");
+   echo "<h1>Авторизация</h1>";
+   if($_GET['error']) {
+      echo "<p>Incorrect login, please try again!</p>";
+}
+?>
+
+<form action="<?php echo $SCRIPT_NAME ?>" method="post">
+<table>
+<tr>
+<td>Имя пользователя</td>
+<td><input type="text" name="username"></td>
+</tr>
+<tr>
+<td>Пароль</td>
+<td><input type="password" name="password"></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" name="submit" value="Войти!"></td>
+</tr>
+</table>
+</form>
+<?php
+}
+require("footer.php");
+?>
+\end{lstlisting}
+
+Последний~--- четвертый~--- шаг будет заключаться в создании страницы
+для корректного выхода с сайта. После того как зарегистрированный
+пользователь выполнит процедуру выхода, сайт <<забудет>> о том, что
+он зарегистрирован в списке пользователей, и будет считать его обычным
+гостем. Если же этот посетитель снова захочет зайти на
+административные страницы, он должен будет выполнить процедуру входа
+заново.
+
+Процедура выхода с сайта описана в программе~\ref{userlogout.php}
+
+\begin{lstlisting}[caption = {userlogout.php}, label = {userlogout.php}]
+<?php
+session_start();
+require("config.php");
+session_unregister("SESS_USERNAME");
+session_unregister("SESS_USERID");
+session_unregister("SESS_USERLEVEL");
+header("Location: " . $config_basedir);
+?>
+\end{lstlisting}
+
+В программе разрегистрируются переменные текущей сессии, созданные в
+программе~\ref{userlogin.php}:
+\texttt{SESS\_USERNAME}, \texttt{SESS\_USERID}, \texttt{SESS\_USERLEVEL}.
+
+\subsection{Добавление статей}
+
+\begin{lstlisting}
+  <?php
+session_start();
+require("config.php");
+require("functions.php");
+require("db.php");
+require_once 'HTML/QuickForm.php';
+
+if($_SESSION['SESS_USERLEVEL'] < 1) {
+   header("Location:" . $config_basedir);
+}
+
+$form = new HTML_QuickForm('firstForm');
+
+$catsql = "SELECT id, category FROM categories ORDER BY category;";
+$catres = mysql_query($catsql);
+while($catrow = mysql_fetch_assoc($catres)) {
+   $catarr[$catrow['id']] = $catrow['category'];
+}
+
+$s =& $form->createElement('select','cat_id','Категория ');
+$s->loadArray($catarr);
+$form->addElement($s);
+
+$form->addElement('text', 'subject', 'Тема', array('size' =>
+ 50, 'maxlength' => 255));
+$form->addElement('textarea', 'body', 'Статья:', array('size' =>
+ 50, 'maxlength' => 255, 'rows' => 20, 'cols' => 80));
+$form->addElement('submit', null, 'Добавить!');
+
+$form->addRule('subject', 'Пожалуйста, введите тему', 'required', null,
+ 'client');
+$form->addRule('body', 'Введите текст статьи!', 'required', null,
+ 'client');
+
+if($form->validate()) {
+   $form->freeze();
+   $form->process("process_data", false);
+   $insertid = mysql_insert_id();
+   header("Location: " . $config_basedir );
+}
+
+else {
+   require("header.php");
+   echo "<h1>Добавить статью</h1>";
+   $form->display();
+}
+
+function process_data ($values) {
+   $sql = "INSERT INTO stories(cat_id, poster_id, dateposted, subject,
+ body) VALUES("
+      . $values['cat_id']
+      . ", " . $_SESSION['SESS_USERID']
+      . ", NOW()"
+      . ", '" . pf_fix_slashes($values['subject']) . "'"
+      . ", '" . pf_fix_slashes($values['body'])
+      . "');";
+   $result = mysql_query($sql);
+}
+require("footer.php");
+?>
+\end{lstlisting}
+\subsection{Удаление статей}
+
+\begin{lstlisting}
+  <?php
+session_start();
+require("config.php");
+require("db.php");
+require("functions.php");
+if($_SESSION['SESS_USERLEVEL'] != 10) {
+   header("Location: " . $config_basedir);
+}
+if(pf_check_number($_GET['id']) == TRUE) {
+   $validid = $_GET['id'];
+}
+else {
+   header("Location: " . $config_basedir);
+}
+if($_GET['conf']) {
+   $delsql = "DELETE FROM stories WHERE id = " . $validid . ";";
+   mysql_query($delsql);
+   header("Location: " . $config_basedir);
+}
+else {
+   require("header.php");
+   echo "<h1>Are you sure you want to delete this question?</h1>";
+   echo "<p>[<a href='" . $SCRIPT_NAME . "?conf=1&id=" . $validid .
+"'>Yes</a>] [<a href='index.php'>No</a>]</p>";
+}
+require("footer.php");
+?>
+\end{lstlisting}
+\section{Дизайн}
+
+Веб-дизайн~--- сложная наука, в задачи которой входит проектирование
+пользовательских веб-интерфейсов для сайтов или
+веб-приложений. Веб-дизайнеры проектируют логическую структуру
+веб-страниц, продумывают наиболее удобные решения подачи информации, а
+так же занимаются художественным оформлением веб-проекта.
+
+Для оформления внешнего вида страниц используется \texttt{CCS}~---
+технология описания внешнего вида документа, написанного языком
+разметки. Получение навыков в веб-дизайне не является целью данного
+курсового проекта, поэтому используется готовый \texttt{css}-шаблон из
+книги Jono Bacon~\cite{Bacon:2007:PPM}. В нём используется
+крайне популярный вид компановки сайта, представленный на рисунке~\ref{maket}.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.7\textwidth]{maket}
+  \caption{Логическая структура страницы}
+  \label{maket}
+\end{figure}
+
+\begin{lstlisting}[caption = {stylesheet.css}, label = {stylesheet.css},
+  language = php]
+  body {
+   font-family: "trebuchet ms", verdana, sans-serif;
+   font-size: 12px;
+   line-height: 1.5em;
+   color: #333;
+   background: #ffffff;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   width: 100%;
+}
+p {
+    margin-top: 10px;
+}
+
+#header {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   height: 60px;
+   width: 100%;
+   background: #333;
+   padding-top: 8px;
+}
+#header h1 {
+   font-size: 30px;
+   text-transform: uppercase;
+   letter-spacing: 0.3em;
+   color: #fff;
+}
+#menu {
+      font-family: "trebuchet ms", verdana, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      position: absolute;
+      height: 27px;
+      top: 60px;
+      left: 0px;
+      width: 100%;
+      padding: 0px;
+      color: #000000;
+      background-color: #eee
+}
+#container {
+     position: absolute;
+     top: 85px;
+     left: 0px;
+     background: #ffffff;
+     margin: 0 auto 0 auto;
+     text-align: left;
+     width: 100%;
+     height: 100%;
+}
+#bar {
+     float: left;
+     width: 200px;
+     background: #eee;
+     padding: 10px;
+     margin-right: 30px;
+     height: 100%;
+}
+img {
+    border: 0;
+}
+#bar h1 {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+}
+#main {
+      margin: 15px 15px 15px 240px;
+      padding: 15px 15px 15px 15px;
+      background: #FFFFFF;
+}
+table {
+   border: thin solid #cccccc;
+   background: #ffffff;
+}
+th {
+   letter-spacing: 2.5px;
+   background: #eeeeeee;
+   color: #000000;
+   text-transform: uppercase;
+   text-align: center;
+   border-top: thick solid #eeeeee;
+   border-bottom: thin solid #cccccc;
+}
+.screenshot-right
+{
+    padding: 15px;
+    float: right;
+}
+\end{lstlisting}
+
+\chapter{Интерактивный тест}
+
+Тест для проверки знаний реализован на \textit{JavaScript}~---
+скриптовый язык, чаще всего использующийся при создании сценариев
+поведения браузера, встраиваемых в веб-страницы. Пример написания
+теста с использованием JavaScript приведён в книге Юрия Ломова~\cite{JavaScript}.
+
+  \begin{lstlisting}[caption = {stylesheet.css}, label =
+    {stylesheet.css}, language = PHP]
+    <body onload="hideNoDHTML();"> <script type="text/javascript">
+    <!-- function hideNoDHTML() {
+      document.getElementyId('nodhtml').style.display = 'none';
+      showQuestions(); }
+
+    function showQuestions() {
+      document.getElementById('questions').style.display = 'block';
+      document.getElementById('results').style.display = 'none'; }
+
+    function showResults() { var i = 0;
+
+      if(document.getElementById('choice12').checked == true) { i++; }
+
+      if(document.getElementById('choice23').checked == true) { i++; }
+
+      if ((document.getElementById('choice31').checked == true) &&
+      (document.getElementById('choice32').checked == false) &&
+      (document.getElementById('choice33').checked == true) &&
+      (document.getElementById('choice34').checked == false)) { i++; }
+
+      if((document.getElementById('choice41').checked == false) &&
+      (document.getElementById('choice42').checked == true) &&
+      (document.getElementById('choice43').checked == true) &&
+      (document.getElementById('choice44').checked == false)) { i++; }
+
+      if(document.getElementById('text5').value == 'ГОСТ Р
+      34.10-2001') { i++; }
+
+      document.getElementById('questions').style.display = 'none';
+      document.getElementById('results').style.display = 'block';
+
+      document.getElementById('results').innerHTML = '<h2>Результаты
+      теста</h2>\n<p>Количество правильных ответов: <strong>' + i +
+      '</strong>.</p>';
+
+      if(i == 5) { document.getElementById('results').innerHTML += '<p
+        style="color: #096">Поздравляем с отличным результатом!</p>';
+      }
+
+      if(i <= 2) { document.getElementById('results').innerHTML += '<p
+        style="color: #c00">К сожалению, результат очень плохой.</p>';
+      }
+
+      document.getElementById('results').innerHTML += '<p
+      class="buttons"><input type="button" value="Вернуться к
+      вопросам" onclick="showQuestions();" /></p>'; }
+
+    function getHelp() { document.getElementById('choice12').checked =
+      true;
+
+      document.getElementById('choice23').checked = true;
+
+      document.getElementById('choice31').checked = true;
+      document.getElementById('choice32').checked = false;
+      document.getElementById('choice33').checked = true;
+      document.getElementById('choice34').checked = false;
+
+      document.getElementById('choice41').checked = false;
+      document.getElementById('choice42').checked = true;
+      document.getElementById('choice43').checked = true;
+      document.getElementById('choice44').checked = false;
+
+      document.getElementById('text5').value = 'ГОСТ Р 34.10-2001'; }
+    //--> </script>
+
+    <h1>Интерактивный тест на знание ЭЦП</h1>
+
+    <div id="questions"> <form action=""> <h2>1. Каково, на ваш
+    взгляд, основное предназначение ЭЦП?</h2> <p><input type="radio"
+    name="question1" id="choice11" /> <label for="choice11">Визуальное
+    оформление веб-страниц</label></p> <p><input type="radio"
+    name="question1" id="choice12" /> <label for="choice12">Защита
+    электронного документа от подделки</label></p> <p><input
+    type="radio" name="question1" id="choice13" /> <label
+    for="choice13">Регистрация пользователей</label></p> <p><input
+    type="radio" name="question1" id="choice14" /> <label
+    for="choice14">Создание зашифрованных разделов жёсткого
+    диска</label></p>
+
+    <h2>2. Стандарт электронной цифровой подписи:</h2> <p><input
+    type="radio" name="question2" id="choice21" /> <label
+    for="choice21">POP3</label></p> <p><input type="radio"
+    name="question2" id="choice22" /> <label
+    for="choice22">UTF</label></p> <p><input type="radio"
+    name="question2" id="choice23" /> <label
+    for="choice23">ElGamal</label></p> <p><input type="radio"
+    name="question2" id="choice24" /> <label
+    for="choice24">PHP</label></p>
+
+    <h2>3. RSA - это</h2> <p><input type="checkbox" id="choice31" />
+    <label for="choice31">Алгоритм, пригодный для
+    шифрования</label></p> <p><input type="checkbox" id="choice32" />
+    <label for="choice32">Операционная система</label></p> <p><input
+    type="checkbox" id="choice33" /> <label
+    for="choice33">Криптографический алгоритм с открытым
+    ключом</label></p> <p><input type="checkbox" id="choice34" />
+    <label for="choice34">Открытый ключ</label></p>
+
+    <h2>4. Назовите возможные угрозы ЭЦП?</h2> <p><input
+    type="checkbox" id="choice41" /> <label
+    for="choice31"></label>Злоумышленник узнает алгоритм
+    шифрования</p> <p><input type="checkbox" id="choice42" /> <label
+    for="choice32">Злоумышленник может попытаться подобрать документ к
+    данной подписи, чтобы подпись к нему подходила</label></p>
+    <p><input type="checkbox" id="choice43" /> <label
+    for="choice33">Злоумышленник может попытаться подделать подпись
+    для выбранного им документа</label></p> <p><input type="checkbox"
+    id="choice44" /> <label for="choice34">Злоумышленник узнает о
+    существовании ЭЦП</label></p>
+
+    <h2>5. Российский стандарт электронной цифровой подписи:</h2>
+    <p><input type="text" size="20" maxlength="20" id="text5" /></p>
+
+    <p class="buttons"><input type="button" value="Показать
+    результаты" onclick="showResults();" /> <input type="button"
+    value="Подсказать ответы" onclick="getHelp();" /> <input
+    type="reset" value="Очистить форму" /></p> </form> </div>
+
+    <div id="results"></div> </body>
+  \end{lstlisting}
+
+Результат работы программы представлен на рисунке~\ref{fig:test}.
+
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.7\textwidth]{test}
+    \caption{Интерактивный тест}
+    \label{fig:test}
+  \end{figure}  
+
+Если тест пройден правильно, пользователь получит отличную оценку
+(рисунок~\ref{fig:result}).
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.7\textwidth]{result}
+    \caption{Результат работы теста}
+    \label{fig:result}
+  \end{figure}
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../TermWork"
+%%% End: 
+
+\chapter{Инструкция пользователя сайта}
+
+В данном проекте был реализован динамический веб-сайт, содержимое
+которого хранится в БД MySQL. Одно из главных преимуществ сайта~---
+возможность изменения его содержимого без знаний принципов
+функционирования \linebreak MySQL. 
+
+Авторизовавшись, пользователь способен быстро создавать новые статьи в
+любом из разделов или подразделов. На сайте реализована удобная панель
+(см.~рисунок~\ref{fig:panel}), преставляющая собой интерфейс для входа
+на сайт, выхода с сайта, добавления новых статей.
+
+Для администратора сайта реализовано удаление статей одним кликом
+мышки.
+
+Неавторизованные пользователи могут просматривать содержимое сайта,
+проверить <<на лету>> насколько хорошо они усвоили метериал с помощью
+процедуры тестирования.
+

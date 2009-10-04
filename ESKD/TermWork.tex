@@ -1,0 +1,73 @@
+\documentclass[russian, koi8-r, pointsubsection, simple]{eskdtext} 
+\usepackage[T2A]{fontenc}
+\usepackage{eskdplain} 
+\usepackage{pscyr} 
+\usepackage{listings}
+\usepackage{ulem} 
+\usepackage{eskdtotal}
+\usepackage{amssymb,amsmath,amsfonts,latexsym,amstext}
+\usepackage{graphicx} 
+\usepackage{url} 
+\usepackage{setspace}
+\graphicspath{{pictures/}}
+
+\usepackage{geometry}
+\geometry{top=2cm}
+\geometry{bottom=3.5cm}
+\geometry{left=3.0cm}
+\geometry{right=2.5cm}
+
+\ESKDtitle{Название работы}
+\ESKDdocName{Технические условия}
+\ESKDsignature{ПГУ~3.090106.001}
+\ESKDauthor{Захаров~М.\,А.}
+\ESKDchecker{Султанов~Б.\,В.}
+\ESKDnormContr{Султанов~Б.\,В.}
+\ESKDcolumnIX{Гр.~06УИ1}
+\addto\captionsrussian{\def\refname{Список использованных источников}}
+
+\usepackage[unicode]{hyperref}
+\hypersetup{
+   pdfkeywords={курсовая, работа},
+   colorlinks=true,
+   linkcolor=red,
+   citecolor=green,
+   urlcolor=cyan
+}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%			Титульная страница			%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{./tex/Title.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%			Задание на курсовую работу		%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{./tex/Task.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%			Реферат с рамкой		        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{./tex/Referat.tex}
+\tableofcontents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%			Введение		                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{./tex/Intro.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%			Основная часть		                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{./tex/MainMatter.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%			Заключение		                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{./tex/Conclusion.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%			Приложения		                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{./tex/Appendix.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%			Библиография		                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{gost780u}
+\bibliography{biblio/mybiblio}
+\end{document}
