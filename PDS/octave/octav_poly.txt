@@ -1,0 +1,201 @@
+[maxim@home-dekstop tex]$ cd ~
+[maxim@home-dekstop ~]$ octave
+GNU Octave, version 3.2.3
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "i386-redhat-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+warning: mark_as_command is obsolete and will be removed from a future version of Octave
+octave:1> p1 = gf([1,0,0,0,0,0,0,0,0,0,0,0,0,0,0],2);
+octave:2> p2 = gf([1,0,0,1,1],2);
+octave:3> [chastn, remd] = deconv(p1,p2)
+chastn =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   1   0   0   1   1   0   1   0   1   1   1
+
+remd =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   0   0   0   0   0   0   0   0   0   0   0   1   0   0   1
+
+octave:4> p1 = gf([1,0,0,0,0,0,0,0,0,0,0,0,0,0],2);
+octave:5> [chastn, remd] = deconv(p1,p2)
+chastn =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   1   0   0   1   1   0   1   0   1   1
+
+remd =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   0   0   0   0   0   0   0   0   0   0   1   1   0   1
+
+octave:6> p1 = gf([1,0,0,0,0,0,0,0,0,0,0,0,0],2);
+octave:7> [chastn, remd] = deconv(p1,p2)
+chastn =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   1   0   0   1   1   0   1   0   1
+
+remd =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   0   0   0   0   0   0   0   0   0   1   1   1   1
+
+octave:8> p1 = gf([1,0,0,0,0,0,0,0,0,0,0,0],2);
+octave:9> [chastn, remd] = deconv(p1,p2)
+chastn =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   1   0   0   1   1   0   1   0
+
+remd =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   0   0   0   0   0   0   0   0   1   1   1   0
+
+octave:10> p1 = gf([1,0,0,0,0,0,0,0,0,0,0],2);
+octave:11> [chastn, remd] = deconv(p1,p2)
+chastn =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   1   0   0   1   1   0   1
+
+remd =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   0   0   0   0   0   0   0   0   1   1   1
+
+octave:12> p1 = gf([1,0,0,0,0,0,0,0,0,0],2);
+octave:13> [chastn, remd] = deconv(p1,p2)
+chastn =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   1   0   0   1   1   0
+
+remd =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   0   0   0   0   0   0   1   0   1   0
+
+octave:14> p1 = gf([1,0,0,0,0,0,0,0,0],2);
+octave:15> [chastn, remd] = deconv(p1,p2)
+chastn =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   1   0   0   1   1
+
+remd =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   0   0   0   0   0   0   1   0   1
+
+octave:16> p1 = gf([1,0,0,0,0,0,0,0],2);
+octave:17> [chastn, remd] = deconv(p1,p2)
+chastn =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   1   0   0   1
+
+remd =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   0   0   0   0   1   0   1   1
+
+octave:18> p1 = gf([1,0,0,0,0,0,0],2);
+octave:19> [chastn, remd] = deconv(p1,p2)
+chastn =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   1   0   0
+
+remd =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   0   0   0   1   1   0   0
+
+octave:20> p1 = gf([1,0,0,0,0,0],2);
+octave:21> [chastn, remd] = deconv(p1,p2)
+chastn =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   1   0
+
+remd =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   0   0   0   1   1   0
+
+octave:22> p1 = gf([1,0,0,0,0],2);
+octave:23> [chastn, remd] = deconv(p1,p2)
+chastn =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   1
+
+remd =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   0   0   0   1   1
+
+octave:24> quit
+
+[maxim@home-dekstop ~]$ 
