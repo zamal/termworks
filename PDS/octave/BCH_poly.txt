@@ -1,0 +1,95 @@
+[maxim@home-dekstop ~]$ octave
+GNU Octave, version 3.2.3
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "i386-redhat-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+warning: mark_as_command is obsolete and will be removed from a future version of Octave
+octave:1> a = gf([1,0,0,1,1,1,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0],2);
+octave:2> x_r =  gf([1,0,0,0,0,0,0,0,0,0,0],2);
+octave:3> proizv = conv(a,x_r)
+proizv =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+ Columns 1 through 22:
+
+   1   0   0   1   1   1   0   0   0   0   1   1   1   1   1   0   0   0   0   0   0   0
+
+ Columns 23 through 31:
+
+   0   0   0   0   0   0   0   0   0
+
+octave:4> g = gf([1,1,1,0,1,1,0,1,0,0,1],2);
+octave:5> [chastn,remd] = deconv(proizv,g)
+chastn =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   1   1   0   0   0   1   0   0   1   0   0   0   1   1   1   0   0   0   1   1   1
+
+remd =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+ Columns 1 through 22:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1
+
+ Columns 23 through 31:
+
+   1   1   1   0   1   1   1   1   1
+
+octave:6> sum = proizv + remd
+sum =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+ Columns 1 through 22:
+
+   1   0   0   1   1   1   0   0   0   0   1   1   1   1   1   0   0   0   0   0   0   1
+
+ Columns 23 through 31:
+
+   1   1   1   0   1   1   1   1   1
+
+octave:7> v = gf([1,1,0,1,1,1,1,0,1,1,0,1,1,0,1,1,0,0,0,1,1,0,0,0,1,0,1,0,0,0,0],2);
+octave:8> [chastn, remd] = deconv (v,g)
+chastn =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+   1   0   1   0   1   1   0   1   1   0   1   0   0   1   1   0   1   0   0   0   0
+
+remd =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+ Columns 1 through 22:
+
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+ Columns 23 through 31:
+
+   0   0   0   0   0   0   0   0   0
+
+octave:9> quit
