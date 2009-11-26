@@ -34,8 +34,9 @@ int main(int argc, char *argv[])
      	  coding_scheme[8] = coding_scheme[8] ^ word_symbol;
      	  coding_scheme[9] = coding_scheme[9] ^ word_symbol;
 
+	  cout << info_word[j] << " | ";
 	  for (int m = 0; m < SCHEME_SIZE; m++)
-	       cout << coding_scheme[m];
+	    cout << coding_scheme[m];
 	  cout << endl;
      }
           
