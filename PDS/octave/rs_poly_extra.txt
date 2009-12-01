@@ -1,0 +1,382 @@
+[maxim@home-dekstop octave]$ cd ~
+[maxim@home-dekstop ~]$ octave
+GNU Octave, version 3.2.3
+Copyright (C) 2009 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "i386-redhat-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+warning: mark_as_command is obsolete and will be removed from a future version of Octave
+octave:1> v = gf([1,3,4,9,9,3,4,13,11,0,5,0,2,8,3],4);
+octave:2> z = gf([1,2,4,8,3,6,12,11,5,10,7,14,15,13,9],4);
+octave:3> proizv = v .* z;
+octave:4> s_0 = sum(proizv)
+s_0 =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   15
+
+octave:5> z_2 = z .^ 2;
+octave:6>  proizv = v .* z_2;
+octave:7> s_1 = sum(proizv)
+s_1 =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   1
+
+octave:8>  z_3 = z .^ 3;
+octave:9> proizv = v .* z_3;
+octave:10> s_2 = sum(proizv)
+s_2 =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   3
+
+octave:11> z_4 = z .^ 4;
+octave:12> proizv = v .* z_4;
+octave:13> s_3 = sum(proizv)
+s_3 =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   1
+
+octave:14> z_5 = z .^ 5;
+octave:15> proizv = v .* z_5;
+octave:16> s_4 = sum(proizv)
+s_4 =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   12
+
+octave:17> z_6 = z .^ 6;
+octave:18>  proizv = v .* z_6;
+octave:19> s_5 = sum(proizv)
+s_5 =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   1
+
+octave:20> m_s = gf([[15,1,3];[1,3,1];[3,1,12]],4)
+m_s =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   15    1    3
+    1    3    1
+    3    1   12
+
+octave:21> m_s_1 = (m_s)^(-1)
+m_s_1 =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+    7    4   11
+    4    8   14
+   11   14   10
+
+octave:22> a = gf([7,4,11],4);
+octave:23> b = gf([1,12,1],4);
+octave:24> c = a .* b;
+octave:25> sum(c)
+ans =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   9
+
+octave:26> a = gf([4,8,14],4);
+octave:27> c = a .* b;
+octave:28> sum(c)
+ans =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   0
+
+octave:29> a = gf([11,14,10],4);
+octave:30> c = a .* b;
+octave:31> sum(c)
+ans =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   5
+
+octave:32> g_x = gf([9,0,5,1],4);
+octave:33> roots(g_x)
+ans =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   3   4   7
+
+octave:34>  temp = gf([1,1,1],4);
+octave:35> betta = temp ./ root
+error: `root' undefined near line 35 column 17
+octave:35> root = roots(g_x);
+octave:36> betta = temp ./ root
+betta =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   14   13    6
+
+octave:37> betta_2 = betta .^ 2
+betta_2 =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   11   14    7
+
+octave:38>  betta_3 = betta .^ 3
+betta_3 =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+    8   10    1
+
+octave:39> betta_matrix = gf([[14,13,6];[11,14,7];[8,10,1]],4)
+betta_matrix =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   14   13    6
+   11   14    7
+    8   10    1
+
+octave:40> betta_matrix = gf([[6,14,13];[7,11,14];[1,8,10]],4)
+betta_matrix =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+    6   14   13
+    7   11   14
+    1    8   10
+
+octave:41> betta_matrix_1 = (betta_matrix)^(-1)
+betta_matrix_1 =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   10    3    1
+    1    3   15
+   11   10   12
+
+octave:42> a = gf([10,3,1],4);
+octave:43> s = gf([15,1,3],4);
+octave:44> tim = a .* s;
+octave:45> sum(tim)
+ans =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   12
+
+octave:46> a = gf([1,3,15],4);
+octave:47> tim = a .* s;
+octave:48> sum(tim)
+ans =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   14
+
+octave:49> a = gf([11,10,12],4);
+octave:50> tim = a .* s;
+octave:51> sum(tim)
+ans =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   14
+
+octave:52> e = gf([0,0,14,0,14,0,0,0,0,12,0,0,0,0,0],4);
+octave:53> v = gf([1,3,4,9,9,3,4,13,11,0,5,0,2,8,3],4);
+octave:54> v_x = v + e
+v_x =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+    1    3   10    9    7    3    4   13   11   12    5    0    2    8    3
+
+octave:55> z = gf([1,2,4,8,3,6,12,11,5,10,7,14,15,13,9],4);
+octave:56> proizv = v_x .* z;
+octave:57> sum(proizv)
+ans =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   2
+
+octave:58> z_2 = z .^ 2;
+octave:59> proizv = v_x .* z_2;
+octave:60> sum(proizv)
+ans =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   9
+
+octave:61> z_3 = z .^ 3;
+octave:62> proizv = v_x .* z_3;
+octave:63> sum(proizv)
+ans =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   10
+
+octave:64> e = gf([0,14,0,14,0,0,0,0,12,0,0,0,0,0,0],4);
+octave:65> v = gf([1,3,4,9,9,3,4,13,11,0,5,0,2,8,3],4);
+octave:66> v_x = v + e
+v_x =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+    1   13    4    7    9    3    4   13    7    0    5    0    2    8    3
+
+octave:67> z = gf([1,2,4,8,3,6,12,11,5,10,7,14,15,13,9],4);
+octave:68> proizv = v_x .* z;
+octave:69> sum(proizv)
+ans =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = sum(proizv)
+
+   0
+
+octave:70> z_2 = z .^ 2;
+octave:71> proizv = v_x .* z_2;
+octave:72> sum(proizv)
+ans =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   3
+
+octave:73> z_3 = z .^ 3;
+octave:74> proizv = v_x .* z_3;
+octave:75> sum(proizv)
+ans =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   13
+
+octave:76> e = gf([0,0,0,0,0,12,0,0,0,0,0,14,0,14,0],4);
+octave:77> v = gf([1,3,4,9,9,3,4,13,11,0,5,0,2,8,3],4);
+octave:78> v_x = v + e
+v_x =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+    1    3    4    9    9   15    4   13   11    0    5   14    2    6    3
+
+octave:79> z = gf([1,2,4,8,3,6,12,11,5,10,7,14,15,13,9],4);
+octave:80> proizv = v_x .* z;
+octave:81> sum(proizv)
+ans =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   0
+
+octave:82> z_2 = z .^ 2;
+octave:83> proizv = v_x .* z_2;
+octave:84> sum(proizv)
+ans =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   0
+
+octave:85> z_3 = z .^ 3;
+octave:86> proizv = v_x .* z_3;
+octave:87> sum(proizv)
+ans =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   0
+
+octave:88> z_4 = z .^ 4;
+octave:89> proizv = v_x .* z_4;
+octave:90> sum(proizv)
+ans =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   0
+
+octave:91> z_5 = z .^ 5;
+octave:92> proizv = v_x .* z_4;
+octave:93> sum(proizv)
+ans =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   0
+
+octave:94> z_6 = z .^ 6;
+octave:95> proizv = v_x .* z_6;
+octave:96> sum(proizv)
+ans =
+GF(2^4) array. Primitive Polynomial = D^4+D+1 (decimal 19)
+
+Array elements = 
+
+   0
+
+octave:97> 
