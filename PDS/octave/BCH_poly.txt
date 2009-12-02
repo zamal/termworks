@@ -1,0 +1,74 @@
+octave:1> a = gf([1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0], 2);
+octave:2> x_r =  gf([1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 2);
+octave:3> proizv = conv(a, x_r)
+proizv =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+ Columns 1 through 22:
+
+ 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 0
+
+ Columns 23 through 31:
+
+ 0 0 0 0 0 0 0 0 0
+
+octave:4> g = gf([1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1], 2);
+octave:5> [chastn, remd] = deconv(proizv, bg)
+chastn =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+ 1 1 0 0 0 1 0 0 1 0 0 0 1 1 1 0 0 0 1 1 1
+
+remd =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+ Columns 1 through 22:
+
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
+
+ Columns 23 through 31:
+
+ 1 1 1 0 1 1 1 1 1
+
+octave:6> sum = proizv + remd
+sum =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+ Columns 1 through 22:
+
+ 1 0 0 1 1 1 0 0 0 0 1 1 1 1 1 0 0 0 0 0 0 1
+
+ Columns 23 through 31:
+
+ 1 1 1 0 1 1 1 1 1
+
+octave:7> v = gf([1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0,
+0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0],2);
+octave:8> [chastn, remd] = deconv (v, g)
+chastn =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+ 1 0 1 0 1 1 0 1 1 0 1 0 0 1 1 0 1 0 0 0 0
+
+remd =
+GF(2^2) array. Primitive Polynomial = D^2+D+1 (decimal 7)
+
+Array elements = 
+
+ Columns 1 through 22:
+
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+ Columns 23 through 31:
+
+ 0 0 0 0 0 0 0 0 0
