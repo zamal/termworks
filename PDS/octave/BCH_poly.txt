@@ -1,5 +1,3 @@
-[maxim@home-dekstop ~]$ octave
-
 octave:1> a = gf([1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0], 2);
 octave:2> x_r =  gf([1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 2);
 octave:3> proizv = conv(a, x_r)
@@ -74,5 +72,3 @@ Array elements =
  Columns 23 through 31:
 
  0 0 0 0 0 0 0 0 0
-
-octave:9> quit
