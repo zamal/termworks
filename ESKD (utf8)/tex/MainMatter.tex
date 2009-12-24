@@ -1,59 +1,62 @@
-\section{Оформление}
-\subsection{Перечисления}
+\section{Общие положения}
 
-Ненумерованное перечисление
-\begin{itemize}
-\item первый элемент;
-\item второй элемент;
-\item третий элемент.
-\end{itemize}
+\point Данный документ был создан в целях проверки шаблона для
+оформления курсовых работ.
 
-Нумерованное перечисление:
+\point Нумерованное перечисление:
+
 \begin{enumerate}
-\item первый элемент;
-\item второй элемент состоит из:
+\item первый элемент состоит из:
 \begin{enumerate}
 \item первого подэлемента;
 \item второго подэлемента;
 \end{enumerate}
-\item третий элемент.
+\item второй элемент.
 \end{enumerate}
 
-\subsection{Таблицы}
+\point Знак сноски выполняют арабскими цифрами со скобкой и помещают
+на уровне верхнего обреза шрифта. Пример "--- <<$\ldots$ печатающее
+устройство\footnote{текст сноски}$\ldots$>>.
 
-Название таблицы следует помещать над таблицей. Проверка
-таблицы~\ref{t:1}.
+\subsection{Иллюстрации, таблицы}
 
-\begin{table}[b]
-\caption{Заголовок таблицы}
-\label{t:1}
-\begin{tabular}{|c|c|c|c|}
+Пример иллюстрации изображен на рисунке~\ref{fig:1}.
+
+\begin{figure}[h!]
+\begin{center}
+\setlength{\unitlength}{50mm}
+\begin{picture}(1,1)
+\linethickness{\ESKDlineThin}
+\put(0,0){\line(1,0){1}}
+\put(1,0){\line(0,1){1}}
+\put(0,1){\line(1,0){1}}
+\put(0,0){\line(0,1){1}}
+\put(0,0){\line(1,1){1}}
+\put(1,0){\line(-1,1){1}}
+\end{picture}
+\end{center}
+\caption{Перечеркнутый квадрат}
+\label{fig:1}
+\end{figure}
+
+В таблице~\ref{t:second} приведен пример игры в крестики нолики.
+
+\begin{table}[h!]
+\caption{Вторая таблица}
+\label{t:second}
+\begin{tabular}{|c|c|c|}
 \hline
-\multicolumn{1}{|p{4cm}|}{Диаметр стержня крепежной детали, мм}&
-\multicolumn{1}{p{4cm}|}{Масса $1000~\text{шт.}$ стальных шайб, кг}&
-\multicolumn{1}{p{4cm}|}{Диаметр стержня крепежной детали, мм}&
-\multicolumn{1}{p{4cm}|}{Масса $1000~\text{шт.}$ стальных шайб,
-кг}\\\hline
-$1{,}1$ & $0{,}045$ & $2{,}0$ & $0{,}192$\\\hline
-$1{,}2$ & $0{,}043$ & $2{,}5$ & $0{,}350$\\\hline
-$1{,}4$ & $0{,}111$ & $3{,}0$ & $0{,}553$\\\hline
+o& &x\\\hline
+ &x& \\\hline
+x& &o\\\hline
 \end{tabular}
 \end{table}
 
-\subsection{Иллюстрации}
+\subsection{Формулы}
 
-Пример иллюстрации изображен на рисунке~\ref{pidgin}.
+Плотность каждого образца $\rho, \text{кг}/\text{м}^3$,
+вычисляют по формуле:
 
-\begin{figure}[ht]
-  \center
-  \includegraphics{pidgin}
-  \caption{Pidgin}\label{pidgin}
-\end{figure}
-
-\subsection{Математика}
-
-Плотность каждого образца $\rho, \text{кг}/\text{м}^3$, вычисляют
-по формуле
 \begin{equation}
 \label{eq:1}
 \rho = \frac{m}{V},
@@ -62,3 +65,9 @@ $1{,}4$ & $0{,}111$ & $3{,}0$ & $0{,}553$\\\hline
 \item[где ] $m$ "--- масса образца, кг;
 \item $V$ "--- объем образца, $\text{м}^3$.
 \end{ESKDexplanation}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../TermWork"
+%%% End: 
