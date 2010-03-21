@@ -98,5 +98,4 @@
      - администратора почтового сервера;
      - администратора ИБ;
      - администратора вычислительной сети.
-[[http://github.com/zamal/termworks/tree/8term/OPOIB/pictures/Structure.png]]
-
+[[http://dl.dropbox.com/u/1263682/Structure.png]]
