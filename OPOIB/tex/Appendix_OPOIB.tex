@@ -1,36 +1,27 @@
-\ESKDappendix{обязательное}{Приложение c текстом и формулами}
+\ESKDappendix{обязательное}{Идентификация аппаратных ресурсов фонда
+  как объектов защиты}
+\label{AppendixA}
 
-Формулы, помещаемые в приложениях, должны нумероваться отдельной
-нумерацией арабскими цифрами в пределах каждого приложения с
-добавлением перед каждой цифрой обозначения приложения, например
-формула \eqref{tabwidth}.
+\begin{sidewaystable}[h]
+\begin{longtable}{|p{0.12\textwidth}|p{0.14\textwidth}|
+    p{0.25\textwidth}|p{0.14\textwidth}|p{0.25\textwidth}|}
+\caption{Идентификация аппаратных ресурсов фонда как объектов
+  защиты} 
+\label{hardware} \\\hline 
 
-Расчет ширины колонки таблицы можно выполнить по формуле:
+Аппаратный компонент & Ответственный & Полномочия ответственного &
+Пользователь & Полномочия пользователя\\\hline
 
-\begin{equation}
-\label{tabwidth}
-W_\text{кол} = K \cdot W_\text{textwidth} - 2 \cdot W_\text{tabcolsep}
-- N_\text{rule} \cdot W_\text{arrayrulewidth},
-\end{equation}
-
-\begin{ESKDexplanation}
-\item[где ] $K$ "--- коэффициент ширины;
-\item $W_\text{textwidth}$ "--- ширина текста на странице;
-\item $W_\text{tabcolsep}$ "--- ширина промежутка между
-вертикальной линией, отделяющей ячейку таблицы, и текстом ячейки;
-\item $N_\text{rule}$ "--- число вертикальных линий отводимых на
-ячейку (для внутренних ячеек $1$, для внешних $1{,}5$);
-\item $W_\text{arrayrulewidth}$ "--- толщина вертикальной линии, что
-отделяет ячейки.
-\end{ESKDexplanation}
-
-\ESKDappendix{обязательное}{Исходный код программы}
-
-\lstinputlisting[caption = {seed.cpp}, label = {seed.cpp}]{./src/seed.cpp}
+Почтовый сервер & Системный администратор & Конфигурирование и
+обслуживание, установка ОС и ПО, изменение структуры аппаратных
+ресурсов & раз & два\\\hline
+\end{longtable}
+\end{sidewaystable}
 
 \newpage
 
+
 %%% Local Variables: 
 %%% mode: latex
-%%% TeX-master: "../Term_Work"
+%%% TeX-master: "../TermWork_OPOIB"
 %%% End: 
