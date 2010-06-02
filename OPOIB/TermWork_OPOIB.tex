@@ -55,7 +55,11 @@ equationsection, emptystyle, simple]{eskdtext}
 \addto\captionsrussian{\def\refname{Список использованных источников}}
 
 \usepackage[unicode]{hyperref}
-\hypersetup{pdfkeywords = ОПОИБ Алексеев}
+\hypersetup{pdfkeywords = ОПОИБ Алексеев,
+colorlinks=true,
+linkcolor=red,
+citecolor=green,
+urlcolor=cyan}
 
 \begin{document}
 \input{./tex/Title_OPOIB.tex}
@@ -70,8 +74,16 @@ equationsection, emptystyle, simple]{eskdtext}
 \begin{thebibliography}{99}
 \bibitem{1} Сердюк В. А. Новое в защите от взлома корпоративных
   сетей~--- Москва: Техносфера, 2007.~--- 360 с.
-\bibitem{2} Автор3~И.~О., Автор4~И.~О. Название второй книги. "--- К.:
-Название второго издательства, 1999. "--- 543~с.
+\bibitem{2}Фонд социального страхования Российской Федерации
+  [Электронный ресурс]: Положение о Фонде социального страхования~---
+  Режим доступа:
+  \url{http://www.fss.ru/ru/fund/about/fundamentals/6802.shtml}. 
+\bibitem{3} Крис Касперски. Безопасность электронной почты // Журнал
+  сетевых решений LAN~--- 10.10.2001~г.~---
+  \url{http://www.osp.ru/lan/2001/05/135166/_p1.html}.
+\bibitem{4} SSH // Википедия. [2010—2010]. Дата обновления:
+  01.06.2010. URL: \url{http://ru.wikipedia.org/?oldid=25053931} (дата
+  обращения: 01.06.2010).
 \end{thebibliography}
 
 \input{./tex/Appendix_OPOIB.tex}
