@@ -1,0 +1,92 @@
+\documentclass[russian, utf8, pointsubsection, floatsubsection,
+equationsection, emptystyle, simple]{eskdtext}
+\usepackage[T2A]{fontenc}
+\usepackage{eskdtotal}
+\usepackage[math]{pscyr}
+\usepackage{amssymb, amsmath, amsfonts, latexsym, amstext}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{ulem}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\ESKDsectStyle{section}{\Large\bfseries}
+\graphicspath{{pictures/}}
+
+\usepackage{geometry}
+\geometry{top=2cm}
+\geometry{bottom=3.5cm}
+\geometry{left=3.0cm}
+\geometry{right=2cm}
+\geometry{footskip=1.5cm}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\thepage}
+
+\usepackage{listings}
+\lstset{language=C++,
+  frame = ltrb,
+  framesep = 5pt,
+  basicstyle = \small\ttfamily,
+  keywordstyle = \bfseries, 
+  extendedchars = \true,
+  identifierstyle = \bfseries\itshape, 
+  commentstyle = \itshape,
+  % stringstyle = \itshape, 
+  numbers = left, 
+  numberstyle = \scriptsize,
+  breaklines = true,
+  showspaces = true,
+  showstringspaces = true
+}
+\renewcommand{\lstlistingname}{Листинг}
+
+\ESKDtitle{Разработка политики ИБ ИС организации}
+\ESKDdocName{Курсовая работа}
+\ESKDsignature{ПГУ~3.090106.001}
+\ESKDauthor{Захаров~М.\,А.}
+\ESKDchecker{Алексеев~С.\,В.}
+\ESKDnormContr{Алексеев~С.\,В.}
+\ESKDcolumnIX{Гр.~06УИ1}
+\addto\captionsrussian{\def\refname{Список использованных источников}}
+
+\usepackage[unicode]{hyperref}
+\hypersetup{pdfkeywords = ОПОИБ Алексеев,
+colorlinks=true,
+linkcolor=red,
+citecolor=green,
+urlcolor=cyan}
+
+\begin{document}
+\input{./tex/Title_OPOIB.tex}
+\input{./tex/Referat_OPOIB.tex}
+\tableofcontents
+\newpage
+\input{./tex/Task_OPOIB.tex}
+\input{./tex/Notation_OPOIB.tex}
+\input{./tex/Intro_OPOIB.tex}
+\input{./tex/MainMatter_OPOIB.tex}
+\input{./tex/Conclusion_OPOIB.tex}
+
+\begin{thebibliography}{99}
+\bibitem{1} Сердюк В. А. Новое в защите от взлома корпоративных
+  сетей~--- Москва: Техносфера, 2007.~--- 360 с.
+\bibitem{2}Фонд социального страхования Российской Федерации
+  [Электронный ресурс]: Положение о Фонде социального страхования~---
+  Режим доступа:
+  \url{http://www.fss.ru/ru/fund/about/fundamentals/6802.shtml}. 
+\bibitem{3} Крис Касперски. Безопасность электронной почты // Журнал
+  сетевых решений LAN~--- 10.10.2001~г.~---
+  \url{http://www.osp.ru/lan/2001/05/135166/_p1.html}.
+\bibitem{4} SSH // Википедия. [2010—2010]. Дата обновления:
+  01.06.2010. URL: \url{http://ru.wikipedia.org/?oldid=25053931} (дата
+  обращения: 01.06.2010).
+\end{thebibliography}
+
+\input{./tex/Appendix_OPOIB.tex}
+\input{./tex/AppendixB_OPOIB.tex}
+\end{document}
